@@ -36,6 +36,6 @@ accuracy=42%
 ## Conditioning on Image 图像调节  
 对Model进行修改,使其可以学习图片image信息  
 accuracy=41%  
-## Test 结果验证  
- 
+## Test 结果验证   
+
 
