@@ -6,13 +6,19 @@ flickr8k dataset
 引用于 M. Hodosh, P. Young and J. Hockenmaier (2013) "Framing Image Description as a Ranking Task: Data, Models and Evaluation Metrics", Journal of Artificial Intelligence Research, Volume 47, pages 853-899 http://www.jair.org/papers/paper3994.html when discussing our results  
 ## Main Steps  
 * Create matrices of image representations using an off-the-shelf image encoder.  
-生成
-* Read and preprocess the image captions.   
-* Write a generator function that returns one training instance (input/output sequence pair) at a time.   
+生成图片编码表达
+* Read and preprocess the image captions.  
+读取并处理图片注释文字  
+* Write a generator function that returns one training instance (input/output sequence pair) at a time.  
+训练iterator generator 函数使得可以即时获取图片编码  
 * Train an LSTM language generator on the caption data.  
+在注释文字基础上训练LSTM  
 * Write a decoder function for the language generator.  
+编写解码函数  
 * Add the image input to write an LSTM caption generator.  
+修改LSTM,增加图片信息  
 * Implement beam search for the image caption generator.  
+使用beam search获得图片解码文字  
 ## Image Encoder 图片编译  
 - Single Image Encoder 单张图片编译  
 使用off-the-shelf pre-trained image encoder, the Inception V3 network.  
