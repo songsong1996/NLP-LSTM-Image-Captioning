@@ -37,5 +37,10 @@ accuracy=42%
 对Model进行修改,使其可以学习图片image信息  
 accuracy=41%  
 ## Test 结果验证   
+![alt text](https://github.com/songsong1996/NLP-LSTM-Image-Captioning/blob/master/r1.png "r1")  
+![alt text](https://github.com/songsong1996/NLP-LSTM-Image-Captioning/blob/master/r2.png "r2")  
+![alt text](https://github.com/songsong1996/NLP-LSTM-Image-Captioning/blob/master/r4.png "r4")  
+![alt text](https://github.com/songsong1996/NLP-LSTM-Image-Captioning/blob/master/r5.png "r5")  
+  
 
 
